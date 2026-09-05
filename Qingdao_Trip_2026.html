@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>青岛之旅 2026！我们来喝酒🍺啦！</title>
+<style>
+:root{--bg:#f7fbff;--card:#fff;--ink:#183047;--muted:#71839a;--blue:#1677ff;--blue2:#eaf3ff;--cyan:#19b7c9;--orange:#ff9f43;--red:#f04444;--green:#16a47b;--line:#e5edf5;--shadow:0 8px 28px rgba(41,88,130,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#f8fcff 0,#f7fbff 60%,#fff 100%);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.55}.wrap{max-width:760px;margin:auto;padding:14px 14px 70px}
+.hero{background:#fff;border:1px solid var(--line);border-radius:26px;padding:22px 18px;box-shadow:var(--shadow);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:170px;height:170px;border-radius:50%;background:#eaf5ff;right:-55px;top:-65px}.kicker{font-size:10px;letter-spacing:2px;color:var(--blue);font-weight:800;position:relative;z-index:1}.hero h1{font-size:30px;line-height:1.15;margin:6px 0;position:relative;z-index:1}.hero p{margin:6px 0;color:var(--muted);font-size:13px;position:relative;z-index:1}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:16px;position:relative;z-index:1}.stat{background:#f7fbff;border:1px solid var(--line);border-radius:15px;padding:9px}.stat b{display:block;font-size:18px}.stat span{font-size:10px;color:var(--muted)}
+.countbox{margin:12px 0;display:grid;gap:9px}.countcard{background:#fff;border:1px solid var(--line);border-radius:20px;padding:14px 15px;box-shadow:var(--shadow)}.countlabel{font-size:11px;color:var(--muted);font-weight:700}.counttitle{font-size:14px;font-weight:800;margin-top:2px}.count{font-size:27px;line-height:1.2;font-weight:900;color:var(--blue);font-variant-numeric:tabular-nums;margin-top:5px}.countsub{font-size:10px;color:var(--muted);margin-top:3px}.warn{background:#fff7f5;border-color:#ffd7d0}.warn .count{color:var(--red)}.warnmsg{font-size:12px;font-weight:800;color:#c93636;margin-top:5px}.flight{background:#fff;border:1px solid var(--line);border-radius:19px;margin:10px 0;padding:14px;box-shadow:var(--shadow)}.flight-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.flight-title{font-weight:850;font-size:15px}.tz{font-size:9px;color:var(--blue);background:var(--blue2);padding:4px 7px;border-radius:99px}.flight-row{display:grid;grid-template-columns:58px 1fr;gap:9px;padding:10px 0 2px;border-top:1px dashed var(--line);margin-top:9px}.time{font-weight:900;color:var(--blue);font-size:17px}.small{font-size:10px;color:var(--muted)}
+.nav{display:flex;gap:7px;overflow:auto;padding:9px 0;position:sticky;top:0;background:#f8fcffeb;backdrop-filter:blur(10px);z-index:8}.nav a{white-space:nowrap;background:#fff;border:1px solid var(--line);padding:7px 12px;border-radius:999px;font-size:12px;color:var(--ink);text-decoration:none}.nav a:first-child{color:var(--blue);border-color:#cfe2ff}
+section{margin-top:19px}.title{display:flex;justify-content:space-between;align-items:end;margin-bottom:9px}.title h2{margin:0;font-size:21px}.title small{color:var(--muted);font-size:10px}.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:15px;margin:10px 0;box-shadow:var(--shadow)}
+.route{display:flex;align-items:center;gap:5px;overflow:auto;padding:4px 1px}.city{min-width:75px;text-align:center;background:#f7fbff;border:1px solid #dcecff;border-radius:15px;padding:9px 7px}.city b{display:block;font-size:13px}.city span{font-size:9px;color:var(--muted)}.arrow{color:#9ab3cc;font-weight:900}
+.dayhead{display:flex;gap:11px;align-items:center}.dayno{width:45px;height:45px;background:var(--blue2);color:var(--blue);border-radius:14px;display:grid;place-items:center;font-weight:900}.date{font-size:10px;color:var(--muted)}.daytitle{font-size:16px;font-weight:850}.pill{font-size:9px;background:#effaf7;color:var(--green);padding:3px 7px;border-radius:999px;margin-left:5px}.stop{display:flex;gap:9px;padding:10px 0;border-top:1px dashed var(--line);margin-top:5px}.stop b{font-size:13px}.stop small{display:block;color:var(--muted);font-size:10px}.map{display:inline-block;margin-top:5px;background:var(--blue);color:#fff;border-radius:9px;padding:5px 9px;font-size:10px;text-decoration:none}.tip{background:#fffaf0;border-left:4px solid var(--orange);border-radius:9px;padding:9px 11px;font-size:11px;margin-top:8px}.mealmini{margin-top:9px;padding:10px;background:#f7fbff;border-radius:13px;border:1px solid #e4eef8}.mealmini b{font-size:11px}.mealmini div{font-size:11px;margin-top:3px}.mealmini a{font-size:10px;color:var(--blue);text-decoration:none}
+.foodgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.food{border:1px solid var(--line);border-radius:16px;background:#fff;padding:12px}.foodtag{font-size:9px;color:var(--blue);background:var(--blue2);display:inline-block;padding:3px 6px;border-radius:999px}.food b{font-size:14px;display:block;margin-top:6px}.stars{font-size:10px;color:#f5a623}.food p{font-size:10px;color:var(--muted);margin:4px 0 7px}.food a{font-size:10px;color:var(--blue);text-decoration:none}.citytitle{font-size:14px;font-weight:900;margin:14px 0 7px}.restaurant{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}.restaurant:first-child{border-top:0}.restaurant b{font-size:12px}.restaurant small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.amap{background:#eef7ff;color:var(--blue);border:1px solid #d5e8ff;border-radius:9px;padding:6px 8px;font-size:10px;text-decoration:none;white-space:nowrap}.order{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.order div{background:#f8fbfe;border:1px solid var(--line);border-radius:13px;padding:9px}.order b{font-size:11px}.order span{display:block;font-size:9px;color:var(--muted);margin-top:2px}.check li{margin:7px 0;font-size:12px}.note{font-size:10px;color:var(--muted)}.foot{font-size:9px;color:var(--muted);text-align:center;margin-top:22px}
+.alert6{display:flex;gap:9px;align-items:flex-start;background:#fff5f5;border:1px solid #ffd8d8;border-radius:15px;padding:10px;margin-top:9px}.alert6 b{font-size:11px;color:#d43b3b}.alert6 span{display:block;font-size:10px;color:#7e6262}.hide{display:none!important}
+.weather-card{padding:13px 14px}.weather-note{font-size:10px;color:var(--muted);background:#f7fbff;border:1px solid var(--line);border-radius:12px;padding:9px 10px}.weather-list{margin-top:8px}.weather-row{display:grid;grid-template-columns:42px 48px 1fr;gap:5px;align-items:center;padding:9px 0;border-top:1px solid var(--line);font-size:10px}.weather-row:first-child{border-top:0}.weather-row b{font-size:11px}.weather-row span{color:var(--muted)}.weather-row strong{font-size:11px}.weather-row em{grid-column:3;color:var(--muted);font-style:normal;font-size:9px;margin-top:-4px}.weather-card .tip{margin-top:10px}.
+@media(max-width:480px){.foodgrid{grid-template-columns:1fr}.order{grid-template-columns:1fr 1fr}.hero h1{font-size:28px}}
+
+/* V4 mobile usability */
+.daycard{padding:15px 14px}.timeline{margin-top:8px}.dot{min-width:29px;height:29px;border-radius:10px;background:#eef5ff;color:var(--blue);display:grid;place-items:center;font-size:9px;font-weight:900}
+.activity{margin:4px 0 4px 38px;padding:10px 11px;background:#f3f9ff;border:1px solid #dcecff;border-radius:12px}.activity b{display:block;font-size:11px;color:#176fdc}.activity span{display:block;font-size:10px;color:#526a82;margin-top:2px}
+.route-note{margin-top:9px}.foodroute{padding-bottom:13px}.fooditem{padding:9px 0;border-top:1px solid var(--line)}.fooditem:first-of-type{border-top:0}.fooditem b{display:block;font-size:12px}.fooditem span{display:block;font-size:10px;color:var(--muted);margin-top:2px}.sourcebtn{display:inline-block;margin-top:8px;color:var(--blue);font-size:10px;text-decoration:none;background:#eef6ff;border:1px solid #d5e8ff;padding:6px 9px;border-radius:9px}
+.checkgroup{padding:12px 0;border-top:1px solid var(--line)}.checkgroup:first-child{border-top:0}.checkgroup>b{font-size:12px;display:block;margin-bottom:6px}.checkgroup label{display:flex;gap:8px;align-items:flex-start;font-size:11px;margin:7px 0;color:#31485e}.checkgroup input{width:17px;height:17px;accent-color:var(--blue);margin:0;flex:0 0 auto}.phonecards{display:grid;grid-template-columns:1fr 1fr;gap:7px}.phonecards span{background:#f7fbff;border:1px solid var(--line);border-radius:10px;padding:8px;font-size:10px;text-align:center}.emergency{background:#fffafa;border-color:#ffdede}
+.count{min-height:42px;display:flex;align-items:center}.countnote{font-size:9px;color:#8798aa;margin-top:5px}.previewhint{margin-top:8px;background:#f5f8fc;border:1px dashed #cdd9e6;border-radius:12px;padding:8px 10px;font-size:9px;color:#61758b}
+
+/* V5 lively bright theme */
+body{background:linear-gradient(180deg,#fffaf2 0%,#f5fbff 48%,#fff 100%)}
+.hero-title{font-size:clamp(27px,7vw,42px)!important;line-height:1.15}
+.hero-sub{font-weight:700}
+.countcard{position:relative;overflow:hidden}
+.countcard:before{content:"🍺 ✈️ 🌊";position:absolute;right:13px;top:10px;font-size:17px;opacity:.8;letter-spacing:3px}
+.title h2{letter-spacing:.2px}
+.dayno{position:relative}
+.dayno:after{content:"✦";position:absolute;right:-5px;top:-6px;font-size:8px}
+.daycard:nth-of-type(odd){border-left:4px solid #4d9cff}
+.daycard:nth-of-type(even){border-left:4px solid #ffb84d}
+.mealmini{border-radius:15px!important;background:linear-gradient(135deg,#fff8df,#f4fbff)!important}
+.map,.amap{box-shadow:0 4px 12px rgba(40,120,220,.10)}
+.quickbar{position:fixed;left:50%;bottom:14px;transform:translateX(-50%);z-index:1000;width:min(92%,430px);background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border:1px solid #dbe7f3;border-radius:18px;box-shadow:0 8px 28px rgba(36,78,120,.16);padding:7px;display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.quickbar a{display:flex;flex-direction:column;align-items:center;justify-content:center;text-decoration:none;color:#536b82;font-size:9px;font-weight:800;padding:6px 2px;border-radius:12px}
+.quickbar a span{font-size:16px;line-height:1.1;margin-bottom:2px}
+.quickbar a:active,.quickbar a.active{background:#edf6ff;color:#1877e8}
+main,.container{padding-bottom:92px}
+@media(max-width:480px){.quickbar{bottom:10px}}
+
+.hero{margin:12px 14px 14px;padding:20px 17px 18px;border-radius:24px;background:linear-gradient(135deg,#fff2c9 0%,#eaf6ff 62%,#fff 100%);border:1px solid #e2edf7;box-shadow:0 8px 25px rgba(40,85,120,.08);position:relative;overflow:hidden}
+.hero:after{content:"☁️";position:absolute;right:10px;top:7px;font-size:45px;opacity:.35}
+.hero-kicker{font-size:10px;color:#6b7f93;font-weight:800}
+.hero-title{margin:6px 0 7px;color:#173a5b;font-weight:950}
+.hero-sub{font-size:11px;color:#2678c9}
+.hero-icons{margin-top:12px;font-size:10px;font-weight:800;color:#536b82}
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="hero-kicker">🇲🇾 4个人 · 9天8夜 · 2026.09.12—09.20</div>
+  <h1 class="hero-title">青岛之旅 2026！<br>我们来喝酒🍺啦！</h1>
+  <div class="hero-sub">青岛 → 荣成 → 威海 → 烟台 → 青岛</div>
+  <div class="hero-icons">🌊 海边　🥟 水饺　🍜 小面　📸 拍照　🍺 喝酒</div>
+</div>
+<div class="wrap">
+
+<div class="countbox">
+<div class="countcard" id="outCard">
+  <div class="countlabel">✈️ 去程实时倒数</div>
+  <div class="counttitle">9月12日 01:10｜KUL → TAO</div>
+  <div class="count" id="outCount">6天 16:32:00</div>
+  <div class="countsub">马来西亚／中国均为 UTC+8 · 每秒自动更新</div>
+  <div class="alert6"><div>⏰</div><div><b>起飞前 6 小时温馨通知</b><span id="outWarn">9月11日 19:10 开始提醒</span></div></div>
+</div>
+<div class="countcard" id="backCard">
+  <div class="countlabel">✈️ 回程实时倒数</div>
+  <div class="counttitle">9月20日 09:15｜TAO → KUL</div>
+  <div class="count" id="backCount">15天 00:37:00</div>
+  <div class="countsub">回程同样每秒自动计算</div>
+  <div class="alert6"><div>⏰</div><div><b>起飞前 6 小时温馨通知</b><span id="backWarn">9月20日 03:15 开始提醒</span></div></div>
+</div>
+<div class="previewhint">📱 如果你在 ChatGPT 的网页预览里看到数字不跳，是因为预览器不会执行网页脚本；点右上角「…」用 Safari 打开后，倒数会每秒更新。</div>
+</div>
+<div class="flight"><div class="flight-head"><div class="flight-title">去程｜9月12日 星期六</div><div class="tz">当地时间 UTC+8</div></div><div class="flight-row"><div class="time">01:10</div><div><b>KUL 吉隆坡国际机场 T2</b><div class="small">QW930 · 青岛航空 · Airbus A320-212 · Economy · 含餐</div></div></div><div class="flight-row"><div class="time">07:35</div><div><b>TAO 青岛胶东国际机场</b><div class="small">抵达｜9月12日</div></div></div></div>
+<div class="flight"><div class="flight-head"><div class="flight-title">回程｜9月20日 星期日</div><div class="tz">当地时间 UTC+8</div></div><div class="flight-row"><div class="time">09:15</div><div><b>TAO 青岛胶东国际机场</b><div class="small">QW907 · 青岛航空 · Airbus A321 · Economy · 含餐</div></div></div><div class="flight-row"><div class="time">15:15</div><div><b>KUL 吉隆坡国际机场 T2</b><div class="small">抵达｜9月20日</div></div></div></div>
+
+<nav class="nav">
+<a href="#route">路线</a><a href="#weather">天气</a><a href="#itinerary">每日行程</a><a href="#food">吃什么</a><a href="#weather" class="bottom-nav-item">🌤️<span>天气</span></a><a href="#restaurants">餐厅</a><a href="#check">Checklist</a>
+</nav>
+
+<section id="checklist" id="route">
+<div class="title"><h2>🗺️ 这趟怎么走</h2><small>景点只在每日行程出现一次</small></div>
+<div class="card">
+  <div class="route">
+    <div class="city"><b>青岛</b><span>9/12–9/14</span></div><div class="arrow">→</div>
+    <div class="city"><b>荣成</b><span>9/15</span></div><div class="arrow">→</div>
+    <div class="city"><b>威海</b><span>9/16–9/17</span></div><div class="arrow">→</div>
+    <div class="city"><b>烟台</b><span>9/18–9/19</span></div><div class="arrow">→</div>
+    <div class="city"><b>青岛</b><span>9/19–9/20</span></div>
+  </div>
+  <div class="note route-note">🚗 全程以包车为主。每天的「高德导航」只放在当天景点下面，不另外做一份重复地址表。</div>
+</div>
+</section>
+
+<section id="weather">
+<div class="title"><h2>🌤️ 天气</h2><small>9/5 当前趋势｜Checklist再确认</small></div>
+<div class="card weather-card">
+  <div class="weather-note">目前属于较长期预报，天气会继续调整；以下先给你一个“穿什么＋要不要带伞”的参考。荣成以威海沿海预报作参考。</div>
+  <div class="weather-list">
+    <div class="weather-row"><b>9/12</b><span>青岛</span><strong>☀️ 28° / 18°</strong><em>晴｜薄长袖＋短袖</em></div>
+    <div class="weather-row"><b>9/13</b><span>青岛</span><strong>🌦️ 28° / 18°</strong><em>有小雨趋势｜带折叠伞</em></div>
+    <div class="weather-row"><b>9/14</b><span>青岛</span><strong>⛅ 27° / 19°</strong><em>多云｜舒服好走</em></div>
+    <div class="weather-row"><b>9/15</b><span>荣成</span><strong>☁️ 25° / 21°</strong><em>多云｜海边注意风</em></div>
+    <div class="weather-row"><b>9/16</b><span>威海</span><strong>☁️ 29° / 20°</strong><em>多云｜海边防晒</em></div>
+    <div class="weather-row"><b>9/17</b><span>威海</span><strong>🌦️ 30° / 26°</strong><em>有小雨趋势｜带伞</em></div>
+    <div class="weather-row"><b>9/18</b><span>烟台</span><strong>🌦️ 29° / 25°</strong><em>有雨趋势｜带伞</em></div>
+    <div class="weather-row"><b>9/19</b><span>烟台</span><strong>🌦️ 30° / 25°</strong><em>有雨趋势｜看当天调整</em></div>
+    <div class="weather-row"><b>9/20</b><span>青岛</span><strong>🌦️ 30° / 21°</strong><em>有雨趋势｜回程日带伞</em></div>
+  </div>
+  <div class="tip">🧥 <b>简单带法：</b>短袖为主＋1件薄外套＋折叠伞。海边、索道、夜晚可能比市区更有风。</div>
+  <div class="note" style="margin-top:8px">天气资料为9/5看到的长期预测，不同平台会有差异；Checklist1–3天再看一次最重要。</div>
+</div>
+</section>
+
+<section id="itinerary">
+<div class="title"><h2>📅 每日行程</h2><small>去哪＋怎么玩＋高德导航</small></div>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D1</div><div><div class="date">9/12 星期六</div><div class="daytitle">抵达青岛 · 今天不要赶</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>青岛胶东国际机场</b><small>07:35 抵达 → 接机 → 酒店寄放行李／入住</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%9D%92%E5%B2%9B%E8%83%B6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>今天怎么过</b><span>睡一觉、附近走走、晚上早点休息。凌晨班机后不要把第一天排满。</span></div>
+</div>
+<div class="mealmini"><b>🍜 今天吃什么</b><div>鲅鱼水饺＋辣炒蛤蜊。第一顿以轻松为主。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D2</div><div><div class="date">9/13 星期日</div><div class="daytitle">青岛经典地标＋啤酒</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>青岛啤酒博物馆</b><small>看啤酒历史、生产展示；有品酒体验</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%9D%92%E5%B2%9B%E5%95%A4%E9%85%92%E5%8D%9A%E7%89%A9%E9%A6%86" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>可以做什么</b><span>拍工业风照片 → 了解青岛啤酒 → 体验品酒；如果喝酒，当天不要自己开车。</span></div>
+<div class="stop"><div class="dot">02</div><div><b>栈桥</b><small>海边散步、拍青岛地标照</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%9D%92%E5%B2%9B%E6%A0%88%E6%A1%A5" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">03</div><div><b>圣弥厄尔大教堂</b><small>看老城建筑、拍照；注意开放时间</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%9C%A3%E5%BC%A5%E5%8E%84%E5%B0%94%E5%A4%A7%E6%95%99%E5%A0%82%20%E9%9D%92%E5%B2%9B" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">04</div><div><b>五四广场 → 情人坝</b><small>看海湾夜景；晚上更有氛围</small><a class="map" href="https://uri.amap.com/search?keyword=%E4%BA%94%E5%9B%9B%E5%B9%BF%E5%9C%BA%20%E9%9D%92%E5%B2%9B" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="mealmini"><b>🍽️ 今天吃什么</b><div>海鲜水饺＋辣炒蛤蜊＋青岛鲜啤；4人共享，别一次点太多海鲜。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D3</div><div><div class="date">9/14 星期一</div><div class="daytitle">老城区建筑＋小麦岛日落</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>信号山</b><small>俯瞰青岛老城区，适合上午拍全景</small><a class="map" href="https://uri.amap.com/search?keyword=%E4%BF%A1%E5%8F%B7%E5%B1%B1%E5%85%AC%E5%9B%AD%20%E9%9D%92%E5%B2%9B" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>可以做什么</b><span>今天重点不是“打卡很多”，而是看红瓦老城＋海景；穿舒服的鞋，留一点慢走时间。</span></div>
+<div class="stop"><div class="dot">02</div><div><b>德国总督府</b><small>看历史建筑外观、拍建筑细节</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%9D%92%E5%B2%9B%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%9D%A3%E5%BA%9C%E6%97%A7%E5%9D%80" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">03</div><div><b>小青岛·琴屿路</b><small>海边散步、拍海岸线</small><a class="map" href="https://uri.amap.com/search?keyword=%E7%90%B4%E5%B1%BF%E8%B7%AF%20%E5%B0%8F%E9%9D%92%E5%B2%9B" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">04</div><div><b>八大关</b><small>看不同风格建筑，慢慢走</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%85%AB%E5%A4%A7%E5%85%B3%20%E9%9D%92%E5%B2%9B" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">05</div><div><b>小麦岛</b><small>把傍晚时间留给海边日落</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%B0%8F%E9%BA%A6%E5%B2%9B%20%E9%9D%92%E5%B2%9B" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="mealmini"><b>🍽️ 今天吃什么</b><div>海肠捞饭／青岛老味道家常菜；晚餐不要吃太撑，方便看日落。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D4</div><div><div class="date">9/15 星期二</div><div class="daytitle">崂山海岸线 · 转场荣成</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>崂山仰口风景区</b><small>山海景观；索道按当天体力决定</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%B4%82%E5%B1%B1%E4%BB%B0%E5%8F%A3%E9%A3%8E%E6%99%AF%E5%8C%BA" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>可以做什么</b><span>想轻松：索道＋看海；想走路：选短程步道。不要为了“走完”把体力用光，因为下午还要转场。</span></div>
+<div class="stop"><div class="dot">02</div><div><b>青山渔村</b><small>看山海渔村、拍红瓦房</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%9D%92%E5%B1%B1%E6%B8%94%E6%9D%91%20%E5%B4%82%E5%B1%B1" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">03</div><div><b>仰口沙滩</b><small>海边走走、吹海风</small><a class="map" href="https://uri.amap.com/search?keyword=%E4%BB%B0%E5%8F%A3%E6%B2%99%E6%BB%A9" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="tip">🚗 下午重点是安全转场荣成，不建议再硬塞景点。</div>
+<div class="mealmini"><b>🍽️ 今天吃什么</b><div>崂山当地海鲜／家常菜；下午转场后简单吃。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D5</div><div><div class="date">9/16 星期三</div><div class="daytitle">荣成海岸线 → 威海</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>摩天岭跨海索道</b><small>看海岸线＋跨海视角，天气不好时以现场安排为准</small><a class="map" href="https://uri.amap.com/search?keyword=%E6%91%A9%E5%A4%A9%E5%B2%AD%E8%B7%A8%E6%B5%B7%E7%B4%A2%E9%81%93" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>可以做什么</b><span>重点拍“山＋海＋索道”视角；怕高或风大就以安全为先。</span></div>
+<div class="stop"><div class="dot">02</div><div><b>布鲁威斯号</b><small>废弃巨轮海边拍照点，注意现场安全及开放情况</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%B8%83%E9%B2%81%E5%A8%81%E6%96%AF%E5%8F%B7%20%E8%8D%A3%E6%88%90" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">03</div><div><b>钻石沙滩／那香海</b><small>海边散步、拍照、看夕阳</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%82%A3%E9%A6%99%E6%B5%B7%20%E5%A8%81%E6%B5%B7" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="mealmini"><b>🍽️ 今天吃什么</b><div>大鲅鱼水饺＋本地海鲜；4人共享最刚好。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D6</div><div><div class="date">9/17 星期四</div><div class="daytitle">威海海岸线一日</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>孤独的鲸</b><small>海边装置／拍照点，适合停留拍照</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%A8%81%E6%B5%B7%20%E5%AD%A4%E7%8B%AC%E7%9A%84%E9%B2%B8" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">02</div><div><b>猫头山</b><small>看海岸线和礁石，适合拍大景</small><a class="map" href="https://uri.amap.com/search?keyword=%E7%8C%AB%E5%A4%B4%E5%B1%B1%20%E5%A8%81%E6%B5%B7" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>可以做什么</b><span>猫头山看景＋半月湾散步＋火炬八街拍照。今天是“慢慢拍”的一天，不用每个点停很久。</span></div>
+<div class="stop"><div class="dot">03</div><div><b>半月湾</b><small>海边散步、休息</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%8D%8A%E6%9C%88%E6%B9%BE%20%E5%A8%81%E6%B5%B7" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">04</div><div><b>火炬八街</b><small>坡道街景＋海景拍照；人多时注意车辆</small><a class="map" href="https://uri.amap.com/search?keyword=%E7%81%AB%E7%82%AC%E5%85%AB%E8%A1%97%20%E5%A8%81%E6%B5%B7" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="mealmini"><b>🍽️ 今天吃什么</b><div>大鲅鱼水饺＋海肠捞饭；想换口味再看当天海鲜。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D7</div><div><div class="date">9/18 星期五</div><div class="daytitle">威海 → 烟台</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>幸福门</b><small>看威海海湾城市景观</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%B9%B8%E7%A6%8F%E9%97%A8%20%E5%A8%81%E6%B5%B7" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">02</div><div><b>威海大相框</b><small>地标合照，停留时间不用太长</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%A8%81%E6%B5%B7%E5%A4%A7%E7%9B%B8%E6%A1%86" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">03</div><div><b>养马岛</b><small>海岸线、果冻海、沿路拍照</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%85%BB%E9%A9%AC%E5%B2%9B%20%E7%83%9F%E5%8F%B0" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>可以做什么</b><span>养马岛建议不要“环岛狂赶”：看到喜欢的海边就停下来拍；下午再去烟台市区。</span></div>
+<div class="stop"><div class="dot">04</div><div><b>渔人码头</b><small>海边建筑＋拍照；傍晚氛围较好</small><a class="map" href="https://uri.amap.com/search?keyword=%E7%83%9F%E5%8F%B0%E6%B8%94%E4%BA%BA%E7%A0%81%E5%A4%B4" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">05</div><div><b>月亮湾</b><small>海边散步、看夜景</small><a class="map" href="https://uri.amap.com/search?keyword=%E6%9C%88%E4%BA%AE%E6%B9%BE%20%E7%83%9F%E5%8F%B0" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">06</div><div><b>所城里 → 朝阳街</b><small>老城街区、吃小吃、晚上逛街</small><a class="map" href="https://uri.amap.com/search?keyword=%E6%9C%9D%E9%98%B3%E8%A1%97%20%E7%83%9F%E5%8F%B0" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="mealmini"><b>🍽️ 今天吃什么</b><div>烟台海肠捞饭＋海鲜疙瘩汤；多人共享更适合。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D8</div><div><div class="date">9/19 星期六</div><div class="daytitle">蓬莱 → 青岛</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>金沙滩／孤独的鲸</b><small>最后一次海边拍照，时间允许再停</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%87%91%E6%B2%99%E6%BB%A9%20%E5%AD%A4%E7%8B%AC%E7%9A%84%E9%B2%B8%20%E7%83%9F%E5%8F%B0" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="stop"><div class="dot">02</div><div><b>蓬莱阁</b><small>看古建筑＋海景，留出完整游览时间</small><a class="map" href="https://uri.amap.com/search?keyword=%E8%93%AC%E8%8E%B1%E9%98%81%E9%A3%8E%E6%99%AF%E5%8C%BA" target="_blank" rel="noopener">高德导航</a></div></div>
+<div class="activity"><b>可以做什么</b><span>今天重点是蓬莱阁＋海边风景；不要为了赶回青岛而把午餐和景区压得太紧。</span></div>
+<div class="stop"><div class="dot">03</div><div><b>八仙过海群雕</b><small>拍照留念后返程青岛</small><a class="map" href="https://uri.amap.com/search?keyword=%E5%85%AB%E4%BB%99%E8%BF%87%E6%B5%B7%E7%BE%A4%E9%9B%95%E8%93%AC%E8%8E%B1" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="mealmini"><b>🍜 今天吃什么</b><div>蓬莱小面＋鲅鱼水饺／海肠捞饭，三样不用全点。</div></div>
+</article>
+
+<article class="card daycard">
+<div class="dayhead"><div class="dayno">D9</div><div><div class="date">9/20 星期日</div><div class="daytitle">回程 ✈️ · 今天只做一件事：准时到机场</div></div></div>
+<div class="timeline">
+<div class="stop"><div class="dot">01</div><div><b>青岛胶东国际机场 TAO</b><small>09:15 起飞；送机时间请前一晚和司机确认</small><a class="map" href="https://uri.amap.com/search?keyword=%E9%9D%92%E5%B2%9B%E8%83%B6%E4%B8%9C%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BA" target="_blank" rel="noopener">高德导航</a></div></div>
+</div>
+<div class="tip">⏰ 03:15 开始进入起飞前6小时提醒。前一晚不要熬夜收拾。</div>
+</article>
+</section>
+
+<section id="food">
+<div class="title"><h2>🍜 沿途必吃</h2><small>按你们每天路线安排</small></div>
+
+<div class="card foodroute"><div class="citytitle">青岛｜9/12–9/14</div>
+<div class="fooditem"><b>① 鲅鱼水饺</b><span>青岛／胶东代表主食，4人适合点一份大家分。</span></div>
+<div class="fooditem"><b>② 辣炒蛤蜊</b><span>青岛海鲜高频菜，适合当共享菜。</span></div>
+<div class="fooditem"><b>③ 海肠捞饭</b><span>想吃胶东海味可以安排一次，不需要每餐都吃。</span></div>
+<div class="fooditem"><b>④ 青岛鲜啤</b><span>可以尝，但如果当天有酒精体验，交给司机开车。</span></div>
+<a class="sourcebtn" href="https://www.amap.com/ranking/qingdao/food" target="_blank" rel="noopener">看高德青岛美食榜 →</a></div>
+
+<div class="card foodroute"><div class="citytitle">威海／荣成｜9/15–9/17</div>
+<div class="fooditem"><b>① 大鲅鱼水饺 ⭐</b><span>这趟建议一定吃一次，4人共享很合适。</span></div>
+<div class="fooditem"><b>② 海肠捞饭</b><span>多人共享主食，不要每个人各点一份。</span></div>
+<div class="fooditem"><b>③ 当日海鲜</b><span>看到本地人多、明档现选的店，再决定海鲜种类。</span></div>
+<div class="fooditem"><b>④ 玉米面／地方小吃</b><span>可以穿插一餐，避免连续几顿都吃海鲜。</span></div>
+<a class="sourcebtn" href="https://www.amap.com/ranking/weihai/shop" target="_blank" rel="noopener">看高德威海烟火小店 →</a></div>
+
+<div class="card foodroute"><div class="citytitle">烟台／蓬莱｜9/18–9/19</div>
+<div class="fooditem"><b>① 蓬莱小面 ⭐</b><span>建议安排早餐或早午餐，重点是海鲜卤。</span></div>
+<div class="fooditem"><b>② 海肠捞饭 ⭐</b><span>烟台高德美食榜多家店反复出现。</span></div>
+<div class="fooditem"><b>③ 鲅鱼水饺</b><span>蓬莱海鲜店常见招牌，和小面二选一也可以。</span></div>
+<div class="fooditem"><b>④ 海鲜疙瘩汤</b><span>烟台本地海鲜＋面食，4人共享比较刚好。</span></div>
+<a class="sourcebtn" href="https://www.amap.com/ranking/yantai/food" target="_blank" rel="noopener">看高德烟台美食榜 →</a></div>
+
+<div class="card">
+<b>👥 4个人点餐，最实用的点法</b>
+<div class="order" style="margin-top:9px">
+<div><b>海鲜 × 1–2</b><span>看当天鲜货</span></div>
+<div><b>地方特色 × 1</b><span>饺子／小面</span></div>
+<div><b>蔬菜 × 1</b><span>平衡一下</span></div>
+<div><b>主食 × 1</b><span>捞饭／面</span></div>
+</div>
+<div class="note" style="margin-top:8px">💡 海鲜先点少一点，不够再加。点菜前先问“按斤还是按份、价格怎么算”。</div>
+</div>
+</section>
+
+<section id="restaurants">
+<div class="title"><h2>🍽️ 餐厅选择</h2><small>高德资料优先｜到店前再确认</small></div>
+
+<div class="card">
+<div class="citytitle">青岛</div>
+<div class="restaurant"><div><b>清真马家海鲜大排档（台东八路店）</b><small>高德榜单推荐｜海肠捞饭、手抓海鲜</small></div><a class="amap" href="https://uri.amap.com/search?keyword=%E6%B8%85%E7%9C%9F%E9%A9%AC%E5%AE%B6%E6%B5%B7%E9%B2%9C%E5%A4%A7%E6%8E%92%E6%A1%A3%20%E5%8F%B0%E4%B8%9C%E5%85%AB%E8%B7%AF%E5%BA%97" target="_blank" rel="noopener">高德</a></div>
+<div class="restaurant"><div><b>双合园·海鲜水饺青岛菜</b><small>高德榜单推荐｜鲅鱼／海鲜水饺</small></div><a class="amap" href="https://uri.amap.com/search?keyword=%E5%8F%8C%E5%90%88%E5%9B%AD%20%E6%B5%B7%E9%B2%9C%E6%B0%B4%E9%A5%BA%20%E9%9D%92%E5%B2%9B" target="_blank" rel="noopener">高德</a></div>
+<a class="sourcebtn" href="https://www.amap.com/ranking/qingdao/food" target="_blank" rel="noopener">打开高德青岛榜单 →</a>
+</div>
+
+<div class="card">
+<div class="citytitle">威海</div>
+<div class="restaurant"><div><b>聚朋大鲅鱼饺子饭店</b><small>高德榜单推荐｜大鲅鱼饺、海肠捞饭</small></div><a class="amap" href="https://uri.amap.com/search?keyword=%E8%81%9A%E6%9C%8B%E5%A4%A7%E9%B2%85%E9%B1%BC%E9%A5%BA%E5%AD%90%E9%A5%AD%E5%BA%97%20%E5%A8%81%E6%B5%B7" target="_blank" rel="noopener">高德</a></div>
+<div class="restaurant"><div><b>宏锦宴海鲜酒楼（韩乐坊店）</b><small>高德榜单推荐｜海肠捞饭、海鲜</small></div><a class="amap" href="https://uri.amap.com/search?keyword=%E5%AE%8F%E9%94%A6%E5%AE%B4%E6%B5%B7%E9%B2%9C%E9%85%92%E6%A5%BC%20%E9%9F%A9%E4%B9%90%E5%9D%8A%E5%BA%97" target="_blank" rel="noopener">高德</a></div>
+<a class="sourcebtn" href="https://www.amap.com/ranking/weihai/shop" target="_blank" rel="noopener">打开高德威海榜单 →</a>
+</div>
+
+<div class="card">
+<div class="citytitle">烟台／蓬莱</div>
+<div class="restaurant"><div><b>宾朋渔家海鲜饭庄（兴海路二店）</b><small>高德推荐｜鲅鱼水饺＋海肠捞饭</small></div><a class="amap" href="https://uri.amap.com/search?keyword=%E5%AE%BE%E6%9C%8B%E6%B8%94%E5%AE%B6%E6%B5%B7%E9%B2%9C%E9%A5%AD%E5%BA%84%20%E5%85%B4%E6%B5%B7%E8%B7%AF%E4%BA%8C%E5%BA%97" target="_blank" rel="noopener">高德</a></div>
+<div class="restaurant"><div><b>建兴面馆（东关路店）</b><small>高德推荐｜蓬莱小面</small></div><a class="amap" href="https://uri.amap.com/search?keyword=%E5%BB%BA%E5%85%B4%E9%9D%A2%E9%A6%86%20%E4%B8%9C%E5%85%B3%E8%B7%AF%E5%BA%97" target="_blank" rel="noopener">高德</a></div>
+<div class="restaurant"><div><b>抹直口特色菜馆·海肠捞饭·大鲅鱼水饺</b><small>蓬莱阁附近｜适合D8顺路吃</small></div><a class="amap" href="https://uri.amap.com/search?keyword=%E6%8A%B9%E7%9B%B4%E5%8F%A3%E7%89%B9%E8%89%B2%E8%8F%9C%E9%A6%86%20%E8%93%AC%E8%8E%B1%E9%98%81%E5%BA%97" target="_blank" rel="noopener">高德</a></div>
+<a class="sourcebtn" href="https://www.amap.com/ranking/yantai/food" target="_blank" rel="noopener">打开高德烟台榜单 →</a>
+</div>
+</section>
+
+<section id="check">
+<div class="title"><h2>🎒 Checklist</h2><small>4个人照着勾就可以</small></div>
+
+<div class="card checklist-card">
+<div class="checkgroup"><b>🇲🇾 马来西亚Checklist</b>
+<label><input type="checkbox"> T&G eWallet Top Up</label>
+<label><input type="checkbox"> Credit Card</label>
+<label><input type="checkbox"> Passport</label>
+<label><input type="checkbox"> Cash</label>
+<label><input type="checkbox"> Flight Ticket PDF</label>
+<label><input type="checkbox"> Alipay</label>
+<label><input type="checkbox"> Roaming / eSIM</label>
+<label><input type="checkbox"> Power Bank</label>
+<label><input type="checkbox"> International Adapter</label>
+<label><input type="checkbox"> Travel Insurance</label>
+</div>
+
+<div class="checkgroup"><b>🇨🇳 入境中国</b>
+<label><input type="checkbox"> 中国入境申报（Arrival Card）</label>
+<div class="check-note">可以参考我的视频 🎥</div>
+<div class="check-note">＊最早只能在入境前72小时内填写（boarding时填写方便）</div>
+<div class="check-note">＊填完提交后，一定要截屏保存 QR Code！落地中国直接出示照片扫码 👏🏻</div>
+<label><input type="checkbox"> 高德 Amap App</label>
+<a class="sourcebtn" href="https://s.nia.gov.cn/ArrivalCardFillingPC/" target="_blank" rel="noopener">中国国家移民管理局｜入境卡 →</a>
+</div>
+
+<div class="checkgroup"><b>✈️ 去程｜9/12 01:10</b>
+<label><input type="checkbox"> 9/11 晚上 19:10：进入「起飞前6小时」提醒</label>
+<label><input type="checkbox"> 9/11 晚餐后：护照、手机、钱包、充电宝再检查一次</label>
+<label><input type="checkbox"> 9/11 晚上：不要睡过头；建议提前到 KUL T2</label>
+</div>
+
+<div class="checkgroup"><b>✈️ 回程｜9/20 09:15</b>
+<label><input type="checkbox"> 9/19 晚上：行李全部整理好，不留到凌晨</label>
+<label><input type="checkbox"> 9/20 03:15：进入「起飞前6小时」提醒</label>
+<label><input type="checkbox"> 前一晚和司机确认送机场时间；不要临时才问</label>
+</div>
+
+<div class="checkgroup"><b>🦐 吃海鲜记得</b>
+<label><input type="checkbox"> 先问价格单位：按斤／按份／按只</label>
+<label><input type="checkbox"> 先点少量，不够再加，4个人比较好控制</label>
+<label><input type="checkbox"> 生冷海鲜不要一次吃太多；肠胃不舒服就暂停海鲜</label>
+</div>
+
+<div class="checkgroup"><b>📱 手机里建议固定放这4样</b>
+<div class="phonecards"><span>✈️ 机票截图</span><span>🏨 酒店地址</span><span>🚗 司机电话</span><span>📍 高德地图</span></div>
+</div>
+</div>
+
+<div class="card emergency">
+<b>🆘 真正需要的时候</b>
+<div>报警／急救：<strong>110 / 120</strong></div>
+<div>中国大陆常用支付：支付宝、微信支付、银行卡</div>
+<div class="note">这份手册只做旅行辅助；政策、营业时间、天气、景区开放情况以Checklist及当天官方／高德信息为准。</div>
+</div>
+</section>
+<div class="foot">青岛之旅 2026｜本版已取消美食图片；景点导航只放在对应当天，避免重复。美食参考高德榜单与店铺资料；到店前请再确认营业时间、评分及门店状态。中马均为 UTC+8。</div>
+</div>
+
+<script>
+(function(){
+  const flights = [
+    {id:'out', ts:'2026-09-12T01:10:00+08:00', warn:'2026-09-11T19:10:00+08:00'},
+    {id:'back', ts:'2026-09-20T09:15:00+08:00', warn:'2026-09-20T03:15:00+08:00'}
+  ];
+  function pad(n){ return String(n).padStart(2,'0'); }
+  function fmt(ms){
+    if(ms <= 0) return '00天 00:00:00';
+    let s=Math.floor(ms/1000);
+    const d=Math.floor(s/86400); s%=86400;
+    const h=Math.floor(s/3600); s%=3600;
+    const m=Math.floor(s/60); s%=60;
+    return d+'天 '+pad(h)+':'+pad(m)+':'+pad(s);
+  }
+  function localTime(ts){
+    try{
+      return new Intl.DateTimeFormat('zh-CN',{
+        timeZone:'Asia/Shanghai',month:'numeric',day:'numeric',
+        hour:'2-digit',minute:'2-digit',hour12:false
+      }).format(new Date(ts));
+    }catch(e){ return ''; }
+  }
+  function tick(){
+    const now=Date.now();
+    flights.forEach(f=>{
+      const card=document.getElementById(f.id+'Card');
+      const c=document.getElementById(f.id+'Count');
+      const w=document.getElementById(f.id+'Warn');
+      if(!card || !c || !w) return;
+      const ms=new Date(f.ts).getTime()-now;
+      const wm=new Date(f.warn).getTime()-now;
+      if(ms>0){
+        c.textContent=fmt(ms);
+        if(wm<=0){
+          card.classList.add('warn');
+          w.textContent='现在已经进入起飞前6小时提醒：检查护照、手机、钱包、充电宝、登机资料与送机安排。';
+        }else{
+          card.classList.remove('warn');
+          w.textContent=localTime(f.warn)+' 开始提醒';
+        }
+      }else{
+        c.textContent='已起飞';
+        card.classList.remove('warn');
+        w.textContent='本航班已出发';
+      }
+    });
+  }
+  tick();
+  window.setInterval(tick,1000);
+
+  // Checklist state: keep each person's checked items after reopening the page.
+  try{
+    const checks = document.querySelectorAll('.checkgroup input[type="checkbox"]');
+    const key = 'qingdao-trip-2026-checklist-v1';
+    const saved = JSON.parse(localStorage.getItem(key) || '[]');
+    checks.forEach((box,i)=>{
+      box.checked = saved[i] === true;
+      box.addEventListener('change',()=>{
+        const state = Array.from(checks).map(x=>x.checked);
+        localStorage.setItem(key, JSON.stringify(state));
+      });
+    });
+  }catch(e){}
+})();
+</script>
+
+
+<div class="quickbar" aria-label="快速导航">
+  <a href="#route"><span>🗺️</span>路线</a>
+  <a href="#itinerary"><span>📅</span>每日行程</a>
+  <a href="#food"><span>🍜</span>吃什么</a>
+  <a href="#restaurants"><span>🍽️</span>餐厅</a>
+  <a href="#check"><span>🎒</span>Checklist</a>
+</div>
+</body></html>
